@@ -1,11 +1,14 @@
 @import "banner.css";
 @import "menu.css";
 @import "blog.css";
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
 }
 header{
     width: 100%;
@@ -51,4 +54,17 @@ footer .contenedor{
 .sociales a {
     color: #48AE09;
     text-decoration: none;
+}
+@media (min-width:768px){
+    .sociales{
+        width: auto;
+    }
+    footer .contenedor {
+        justify-content: space-between; /*Con este el footer cada uno se va a un extremo*/
+    }
+}
+@media (min-width:1024px){ /*En esta parte le doy el tamanio a todos los contenedores de la pagina*/
+    .contenedor{
+        width: 1000px;
+    }
 }

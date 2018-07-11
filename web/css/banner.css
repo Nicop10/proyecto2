@@ -11,7 +11,7 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%)translateY(-50%);
-    color:#0A1C65;/**Color de letra**/
+    color:#075EB5/**Color de letra**/
 }
 #banner h2{
     font-size: 28px;
@@ -27,4 +27,28 @@
 }
 #banner a:hover{
     background: rgba(240,82,14,0.4);
+}
+@media(min-width:480px){ /*Cambia el tamanio de la letra a partir de 480px del banner*/
+    #banner h2 {
+        font-size: 40px;
+    }
+    #banner a {
+        margin-top: 25px;
+    }
+}
+@media(min-width:768px){/*tamanio tablet*/
+    #banner{
+        height: 300px;
+        overflow: hidden;
+    }
+    #banner img {
+        height: auto;
+        margin-top: -100px;
+    }
+}
+@media(min-width:1024px){/*tamanio pc*/
+   #banner img {
+        height: auto;
+        margin-top: -200px;
+    }
 }
